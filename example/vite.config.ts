@@ -4,8 +4,10 @@ import Inspect from 'vite-plugin-inspect'
 import VitePluginVitepress from '../src'
 export default defineConfig({
   plugins: [
-    Inspect(),
-    vue(),
     VitePluginVitepress(),
+    Inspect(),
+    vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
   ],
 })

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
-    App
+  <div style="padding: 40px">
+    <router-view />
   </div>
 </template>
